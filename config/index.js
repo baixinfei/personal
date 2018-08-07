@@ -10,7 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/shopping':{
+        target:'https://restapi.ele.me ',
+        changeOrigin :true
+      },
+      '/bgs':{
+        target:'https://restapi.ele.me ',
+        changeOrigin :true
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
